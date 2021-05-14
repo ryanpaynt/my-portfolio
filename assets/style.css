@@ -1,19 +1,22 @@
+/* Root for colors */
 :root{
     --big-section: #659DBD;
     --header: #8D8741;
     --aside: #BC986A;
     --textback: #FBEEC1;
+    --other: #DAAD86;
+    --text: white;
 }
 
+/* header element */
 header{
     background-color: var(--header);
-    position: sticky;
-    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* text inside of the header */
 header h1{
     background-color: var(--textback);
     padding-top: 4px;
@@ -23,10 +26,12 @@ header h1{
     transform: translateY(36px);
 }
 
+/* navigation menu */
 nav {
     transform: translateY(36px);
 }
 
+/* navigation menu */
 header nav li{
     font-size: 24px;
     margin: 4px 32px;
@@ -39,14 +44,17 @@ header nav li{
     padding-bottom: 16px;
 }
 
-a:link a:visited{
+/* navigation menu color unvisited */
+.link1:link .link1:visited{
     color: black;
 }
 
-a:visited{
+/* navigation menu color visited */
+.link1:visited{
     color: black;
 }
 
+/* container for all the elements */
 body{
     background-color: var(--big-section);
     margin: 0;
@@ -54,11 +62,13 @@ body{
     flex-direction: column;
 }
 
+/* back drop placement */
 figure{
     margin: 0px;
     display: block;
 }
 
+/* caption for the back drop */
 figure h2{
     transform: translate(1000px,-75px);
     background-color: var(--textback);
@@ -66,29 +76,142 @@ figure h2{
     width: 440px;
 }
 
-section{
-    border: solid 4px black;
-    padding: 80px;
+/* Profile pic */
+span{
+    position: absolute;
+    transform: translateY(-350px);
 }
 
+/* left side of the website */
+section{
+    padding: 80px;
+    color: var(--text);
+}
+
+/* text on the left side of the site */
 section h2{
     text-align: right;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
+    transform: translate(75px,-30px);
+    font-size: 40px;
+    border-right: solid 4px var(--textback);
 }
 
+/* right side of the website */
+.right{
+    padding: 64px;
+    padding-left: 32px;
+    justify-content: flex-end;
+}
+
+/* paragraph element */
 .right p{
-    border: solid 4px black;
     flex: 2;
-    width: 400px;
+    justify-content: flex-end;
+    font-size: 24px;
+    color: var(--text);
 }
 
+/* Left hand headers */
+.work{
+    margin-bottom: 750px;
+}
+
+/* images for projects */
+img{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border: solid 8px black;
+}
+
+/* container for widgets */
+.proj{
+    transform: translateY(20px);
+}
+
+/* background image dimension */
 .backg{
     width: 1440px;
     height: 400px;
 }
 
+/* main container */
 main{
     display: flex;
     flex: 1 1 0;
     justify-content: flex-end;
+    transform: translateY(-60px);
+}
+
+/* link for the contact anchor link */
+#contact{
+    transform: translate(75px,750px);
+}
+
+/* caption for widgets */
+.proj figcaption{
+    transform: translate(8px,-50px);
+    background-color: black;
+    position: absolute;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* caption for widgets */
+.proj .capt{
+    transform: translate(445px,-50px);
+    background-color: black;
+    position: absolute;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Contact me elements */
+.links ul li{
+    font-size: 40px;
+    margin: 4px 32px;
+    display: inline;
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+/* hyperlink color unvisited */
+a:link {
+    color: white;
+}
+
+/* hyperlink color visited */
+a:visited{
+    color: white;
+}
+
+/* lowering the opacity for hover */
+.proj img, .proj figcaption{
+    opacity: 50%;
+}
+
+/* raising the opacity for hover */
+.proj img:hover{
+    opacity: 100%;
+}
+
+/* raising the opacity for hover */
+.proj figcaption:hover{
+    opacity: 100%;
+}
+
+/* creating a shadow for hover */
+.proj img:hover{
+    box-shadow: 0 0 32px black;
+}
+
+/* adding animation for menu links */
+li:hover{
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    box-shadow: 0 0 32px var(--hints);
+    transform: translateX(24px);
+    border: solid 4px black;
 }
