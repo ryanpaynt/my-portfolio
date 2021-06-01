@@ -1,46 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
     <!-- header -->
-    <header>
-        <h1>Ryan's Portfolio</h1>
+    <div class="pure-g" id="header">
+        <div class="pure-u-1-3" id="title">
+            <h1>Ryan's Portfolio</h1>
+        </div>
         <!-- anchor links -->
-        <nav>
-            <ul>
-                <li><a class="link1" href="#aboutMe">About me</a></li>
-                <li><a class="link1" href="#work">Work</a></li>
-                <li><a class="link1" href="#contact">Contact Me</a></li>
+        <div class="pure-u-2-3" id="nav">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link">About me</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link">Work</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link">Contact me</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <!-- backdrop image -->
-    <figure>
-        <img class="backg" src="./assets/woodbackg.png" alt="backdrop">
-        <figcaption>
-            <h2>Welcome to My Page!</h2>
-        </figcaption>
-        <span><img src="./assets/profile.JPG" alt="Profile Pic"></span>
-    </figure>
+        <!-- backdrop image -->
 
-    <main>
-    <!-- main section -->
+                <img class="backg" src="./assets/woodbackg.png" alt="backdrop">
+                 <img class="profPic" src="./assets/profile.JPG" alt="Profile Pic">
+    <section>
+        <div class="pure-g">
+            <div class="pure-u-1-5">
+                <h2 id="aboutMe">About Me</h2>
+            </div>
+            <div class="pure-u-3-5">
+                <p> Hello, my name is Ryan Paynter. I am currently a student at UNCC and a participator in the UNCC
+                    Coding
+                    Boot Camp.
+                    I am proficient in Java, C++, and linux. I am due to graduate in December of 2022.
+                    With a Bachelors in Science with a concentration in Software Development.
+                    I am also minoring in German! I am currently 20 years old and living in Cornelius, North Carolina.
+                    I love sports, Lake Norman, my dog, and coding! </p>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1-5">
+                <h2 id="work">Work</h2>
+            </div>
+            <div class="pure-u-3-5">
+                <div class="pure-g">
+                    <div class="pure-u-1-2">
+                        <p class="caption">PokeTeam</p>
+                        <a href="https://github.com/amgaudet/pokemon-team-builder/" target="_blank"><img
+                                src="./assets/PTB.png" alt="place holder" height="550" width="400"></a>
+                    </div>
+                    <div class="pure-u-1-2">
+                        <p class="caption">Day Planner</p>
+                        <a href="https://ryanpaynt.github.io/day-planner/" target="_blank"><img
+                                src="./assets/planner.png" alt="place holder" height="550" width="400"></a>
+                    </div>
+                    <div class="pure-u-1-2">
+                        <p class="caption">CSS Cheat Sheet</p>
+                        <a href="file:///Users/ryanpaynter/MiniProjects/mini-proj-02/index.html" target="_blank"><img
+                                src="./assets/proj2.png" alt="place holder" height="300" width="400"></a>
+                    </div>
+                    <div class="pure-u-1-2">
+                        <p class="caption">Code Quiz</p>
+                        <a href="https://ryanpaynt.github.io/code-quiz/" target="_blank"><img src="./assets/codeQuiz .png" alt="place holder" height="300" width="400"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1-5">
+                <h2 id="contact">Contact Me</h2>
+            </div>
+            <div class="pure-u-3-5" id="items">
+                    <ul class="pure-menu-list" id="contactItems">
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="https://www.linkedin.com/in/ryan-paynter-2ba594191/"
+                                target="_blank">LinkdIn</a></li>
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="mailto:ryanpaynt@outlook.com"
+                                target="_blank">Email</a></li>
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="https://github.com/ryanpaynt"
+                                target="blank">GitHub</a></li>
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="./assets/RyanPayntersResume.pdf" download="Ryan Paynter's Resume"
+                                target="blank">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- <main>
+    main section
     <section>
         <h2 id="aboutMe">About Me</h2>
 
         <h2 id="work">Work</h2>
         
         <h2 id="contact">Contact Me</h2>
-    </section>
-    <!-- Projects -->
-    <section class="right">
+    </section> -->
+        <!-- Projects -->
+        <!-- <section class="right">
         <p> Hello, my name is Ryan Paynter. I am currently a student at UNCC and a participator in the UNCC Coding Boot Camp.
             I am proficient in Java, C++, and linux. I am due to graduate in December of 2022.
              With a Bachelors in Science with a concentration in Software Development. 
@@ -63,7 +133,9 @@
                 <li><a href="./assets/resume.jpg " target="_blank">Resume</a></li>
                 <li><a href="mailto:ryanpaynt@outlook.com" target="_blank">Email</a></li>
                 <li><a href="https://github.com/ryanpaynt" target="blank">GitHub</a></li>
+                <li><a href="https://github.com/ryanpaynt" target="blank">LinkdIn</a></li>
             </ul>
-        </nav>
+        </nav> -->
 </body>
+
 </html>
