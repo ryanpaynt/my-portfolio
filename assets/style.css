@@ -17,6 +17,10 @@
     align-items: center;
 }
 
+body{
+    background-color: var(--other);
+}
+
 .pure-menu-link{
    color: black;
    float: right;
@@ -55,16 +59,16 @@ nav{
     transform: translateY(-300px);
 }
 
-.caption{
-    position: absolute;
-}
-
 section{
     transform: translateY(-300px);
 }
 
-.pure-u-1-2 p{
-    background-color: black;
-    color: white;
-    width: 15%;
+img{
+    margin: 8px;
+}
+
+.pure-u-3-5 img:hover{
+   opacity: 50%; 
+   border: solid 4px black;
+   transition: initial .3s;
 }
