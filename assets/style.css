@@ -55,7 +55,6 @@ nav{
 }
 
 .profPic{
-    z-index: 2;
     transform: translateY(-300px);
 }
 
@@ -63,8 +62,8 @@ section{
     transform: translateY(-300px);
 }
 
-img{
-    margin: 8px;
+.pure-u-1-2 img{
+    margin-right: 12px;
 }
 
 .pure-u-3-5 img:hover{
