@@ -51,6 +51,7 @@ nav{
     border-Left: solid 6px black;
     padding-left: 20px;
     margin-top: 20px;
+    background-color: var(--big-section);
 }
 
 /* borders for the bigger columns getting formatted and sized*/
@@ -76,7 +77,7 @@ section{
     margin-right: 12px;
 }
 
-/* when hovered on the image changes */
+/* when hovered on the image changes*/
 .pure-u-3-5 img:hover{
    opacity: 50%; 
    border: solid 4px black;
