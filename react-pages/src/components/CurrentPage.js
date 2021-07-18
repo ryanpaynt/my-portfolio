@@ -30,6 +30,8 @@ export default function PortfolioContainer() {
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
+      <img class="responsive-img" id="banner" src="./assets/banner.jpg"/>
+      <img class="responsive-img" id="profile" src="./assets/profile.JPG"/>
     </div>
   );
 }
