@@ -46,14 +46,16 @@ nav{
 
 #profile{
   position: absolute;
-  width: 35%;
-  margin-top: 22%;
+  width: 25%;
+  margin-top: 17%;
+  margin-left: 10%;
   border-radius: 100%;
+  z-index: 1;
 }
 
 #content{
   position: relative;
-  margin-top: 50%;
+  margin-top: 35%;
 }
 
 .text{
@@ -92,4 +94,18 @@ a{
 
 #cont-list{
   transform: translateY(-90px);
+}
+
+.carousel{
+  height: 800px;
+}
+
+.carousel .carousel-item {
+  height: 500px !important;
+  width: 600px;
+}
+
+.carousel img{
+  height: 500px;
+  width: 600px;
 }
