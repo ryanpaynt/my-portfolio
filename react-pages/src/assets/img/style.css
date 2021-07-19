@@ -1,0 +1,85 @@
+@import url("http://yui.yahooapis.com/pure/0.5.0/pure-min.css");
+/* Root for colors */
+
+:root{
+    --big-section: #659DBD;
+    --header: #8D8741;
+    --aside: #BC986A;
+    --textback: #FBEEC1;
+    --other: #DAAD86;
+    --text: white;
+}
+
+/* header element */
+#header{
+    background-color: var(--header);
+    display: flex;
+    align-items: center;
+}
+
+/* body element background color */
+body{
+    background-color: var(--other);
+}
+
+/* navigation bar text color and format */
+.pure-menu-link{
+   color: black;
+   float: right;
+}
+
+/* navigation bar container text color and format */
+nav{
+    display: flex;
+    display: inline-flex;
+}
+
+/* text inside of the header */
+#title{
+    background-color: var(--textback);
+
+}
+
+/* banner sizing */
+.backg{
+    width: 100%;
+    height: 500px;
+}
+
+/* borders for the bigger columns getting formatted and sized*/
+.pure-u-3-5{
+    border-Left: solid 6px black;
+    padding-left: 20px;
+    margin-top: 20px;
+    background-color: var(--big-section);
+}
+
+/* borders for the bigger columns getting formatted and sized*/
+
+.pure-u-1-5{
+    text-align: right;
+    margin-right: 20px;
+    z-index: 2;
+}
+
+/* profie picture being moved */
+.profPic{
+    transform: translateY(-300px);
+}
+
+/* section beign moved up */
+section{
+    transform: translateY(-300px);
+}
+
+/* images beign formatted */
+.pure-u-1-2 img{
+    margin-right: 12px;
+}
+
+/* when hovered on the image changes*/
+.pure-u-3-5 img:hover{
+   opacity: 50%; 
+   border: solid 4px black;
+   transition: initial .3s;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -7,31 +7,34 @@ import Resume from './pages/Resume';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
+  
+  useEffect(() => {
+    var hash = window.location.hash.substr(1);
+    console.log(hash);
+    setCurrentPage(hash);
+  }, [])
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
+    if (currentPage === 'resume') {
+      return <Resume />;
     }
-    if (currentPage === 'Portfolio') {
+    if (currentPage === 'portfolio') {
       return <Portfolio />;
     }
-    if (currentPage === 'Contact') {
+    if (currentPage === 'contact') {
       return <Contact />;
     }
-    return <Resume />;
+    return <Home />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
-
   return (
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
-      <img class="responsive-img" id="banner" src="./assets/banner.jpg"/>
-      <img class="responsive-img" id="profile" src="./assets/profile.JPG"/>
     </div>
   );
 }
