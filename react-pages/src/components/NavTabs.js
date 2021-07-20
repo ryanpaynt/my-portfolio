@@ -6,7 +6,7 @@ import banner from '../assets/img/banner.jpg'
 function NavTabs({ currentPage, handlePageChange }) {
   return (
   <div className='navigation'>
-    <ul id="nav-mobile" className="right hide-on-med-and-down">
+    <ul id="nav-mobile" className="right">
         <li>
           <a 
           href="#home"

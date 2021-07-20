@@ -1,13 +1,15 @@
 import React, { Component } from "react"
 import M from "materialize-css"
 import "materialize-css/dist/css/materialize.min.css"
+import 'materialize-css';
+import { Button, Card, Row, Col } from 'react-materialize';
 import html_page from '../../assets/img/html.jpg'
 import note_page from '../../assets/img/note-taker.jpg'
 import team_page from '../../assets/img/PTB.jpg'
 import ff_page from '../../assets/img/ff.jpg'
 
 
-class Carousel extends Component {
+class Portfolio extends Component {
   componentDidMount() {
     const options = {
       duration: 300,
@@ -33,24 +35,10 @@ class Carousel extends Component {
           }}
           className="carousel"
       >
-          <a className="carousel-item" href="https://github.com/ryanpaynt/html-generator"
-              target="_blank" rel="noreferrer"><img src={html_page} alt="image 1"/>
-              <p className="center-align">HTML-Generator</p>
+          <a className="carousel-item"><img src={html_page} alt="image 1"/>
           </a>
 
-          <a className="carousel-item" href="https://github.com/ryanpaynt/note-taker"
-              target="_blank" rel="noreferrer"><img src={note_page} alt="image 2"/>
-              <p className="center-align">note-taker</p>
-          </a>
-
-          <a className="carousel-item" href="https://github.com/amgaudet/pokemon-team-builder/"
-              target="_blank" rel="noreferrer"><img src={team_page} alt="image 3"/>
-              <p className="center-align">poketeam-builder</p>
-          </a>
-
-          <a className="carousel-item" href="https://github.com/huirayj/forum-friends/"
-              target="_blank" rel="noreferrer"><img src={ff_page} alt="image 4"/>
-              <p className="center-align">forum-friends</p>
+          <a className="carousel-item" ><img src={note_page} alt="image 2"/>    
           </a>
       </div>
       </div>
@@ -58,4 +46,4 @@ class Carousel extends Component {
   }
 }
 
-export default Carousel;
+export default Portfolio;

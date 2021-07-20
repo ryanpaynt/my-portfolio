@@ -44,6 +44,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <footer>
+      <p>Made with materialize | <a href="https://github.com/ryanpaynt" target='_blank'>GitHub</a> | <a href="https://stackoverflow.com/users/15771897/ryan-paynter" target='_blank'>StackOverflow</a></p>
+    </footer>
+    <style>
+      footer{
+        text-align: center;
+      }
+    </style>
+    <script>
+      var submitButton = document.getElementById("submit_form");
+          var form = document.getElementById("email_form");
+          form.addEventListener("submit", function (e) {
+              setTimeout(function() {
+                  submitButton.value = "Sending...";
+                  submitButton.disabled = true;
+              }, 1);
+          });
+      </script>
 </body>
 
 </html>

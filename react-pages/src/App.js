@@ -1,5 +1,6 @@
 import React from "react";
 import CurrentPage from "./components/CurrentPage";
+import Portfolio from "./components/pages/Portfolio";
 
 function App() {
     return (
