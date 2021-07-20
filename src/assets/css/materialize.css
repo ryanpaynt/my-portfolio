@@ -120,11 +120,19 @@ h4{
   color: var(--line);
 }
 
+.email-form .btn{
+  background-color: var(--line);
+}
+
+.email-form p{
+  color: white;
+}
+
 .email-form{
-  background-color: white;
   color: black;
   margin: 50px;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
+  margin-top: 25%;
   width: 50%;
   height: 275px;
   padding: 10px;

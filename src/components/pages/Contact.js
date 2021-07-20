@@ -16,7 +16,7 @@ export default function Contact() {
     <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
 
    
-    <input id="submit_form" type="submit" value="Send" />
+    <input className='waves-effect btn' id="submit_form" type="submit" value="Send" />
     <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
 </form>
     </div>
