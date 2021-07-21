@@ -17,7 +17,7 @@ export default function Portfolio() {
 
         <div className='row' id='images'>
           <div className='col s12 m6 6 responsive-img img'>
-            <img style={{opacity: '50%'}} src={budget_page}/>
+            <img style={{opacity: '50%'}} src={budget_page} onMouseOver={this.style.opacity='100%'}/>
             <figcaption>
             <p><u><b>Budget Tracker</b></u></p>
               <br></br>
@@ -28,7 +28,7 @@ export default function Portfolio() {
             </figcaption>
           </div>
           <div className='col s12 m6 6 responsive-img img'>
-            <img style={{opacity: '50%'}} src={note_page}/>
+            <img style={{opacity: '50%'}} src={note_page} onMouseOver={this.style.opacity='100%'}/>
             <figcaption>
             <p><u><b>Notes App</b></u></p>
               <br></br>
@@ -39,7 +39,7 @@ export default function Portfolio() {
             </figcaption>
           </div>
           <div className='col s12 m6 6 responsive-img img'>
-            <img style={{opacity: '50%'}} src={poke_page}/>
+            <img style={{opacity: '50%'}} src={poke_page} onMouseOver={this.style.opacity='100%'}/>
             <figcaption>
             <p><u><b>PokeTeam App</b></u></p>
               <br></br>
@@ -50,7 +50,7 @@ export default function Portfolio() {
             </figcaption>
           </div>
           <div className='col s12 m6 6 responsive-img img'>
-            <img style={{opacity: '50%'}} src={ff_page}/>
+            <img style={{opacity: '50%'}} src={ff_page} onMouseOver={this.style.opacity='100%'}/>
             <figcaption>
             <p><u><b>Forum Friends</b></u></p>
               <br></br>
@@ -61,7 +61,7 @@ export default function Portfolio() {
             </figcaption>
           </div>
           <div className='col s12 m6 6 responsive-img img'>
-            <img style={{opacity: '50%'}} src={team_page}/>
+            <img style={{opacity: '50%'}} src={team_page} onMouseOver={this.style.opacity='100%'}/>
             <figcaption>
             <p><u><b>Team Tracker</b></u></p>
               <br></br>
@@ -69,7 +69,7 @@ export default function Portfolio() {
             </figcaption>
           </div>
           <div className='col s12 m6 6 responsive-img img'>
-            <img style={{opacity: '50%'}} src={fitness_page}/>
+            <img style={{opacity: '50%'}} src={fitness_page} onMouseOver={this.style.opacity='100%'}/>
             <figcaption>
             <p><u><b>Fitness Tracker</b></u></p>
               <br></br>
