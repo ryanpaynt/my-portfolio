@@ -11,6 +11,17 @@ body{
   overflow-x: hidden;
 }
 
+#images{
+  position: relative;
+  margin: 20%;
+  margin-right: 10%;
+}
+
+#images img{
+  margin-right: 20%;
+  margin-bottom: 5%;
+}
+
 .s3{
   padding-bottom: -1100px;
   border-right: solid var(--line) 5px;
@@ -124,6 +135,10 @@ h4{
   background-color: var(--line);
 }
 
+.email-form .btn:hover{
+  background-color: var(--div-backg);
+}
+
 .email-form p{
   color: white;
 }
@@ -136,6 +151,14 @@ h4{
   width: 50%;
   height: 275px;
   padding: 10px;
+}
+
+#email_form [name=subject]{
+  background-color: white;
+}
+
+#email_form textarea{
+  background-color: white;
 }
 
 .skills{
@@ -175,4 +198,35 @@ footer{
 
 footer a{
   color: #985E6D;
+}
+
+figcaption{
+  position: absolute;
+  margin: 10px;
+  transform: translateY(-250px);
+}
+
+figcaption p{
+  color: #000000;
+  font-size: 18px;
+}
+
+figcaption a{
+  color: #985E6D;
+}
+
+.img figcaption{
+  display: none;
+}
+
+.img{
+  opacity: 50%;
+}
+
+.img:hover figcaption{
+  display: block;
+}
+
+.img:hover{
+  opacity: 100%;
 }
