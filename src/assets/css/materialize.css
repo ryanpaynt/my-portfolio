@@ -227,6 +227,6 @@ figcaption a{
   display: block;
 }
 
-/* .img:hover{
+.img:hover{
   opacity: 100%;
-} */
+}
