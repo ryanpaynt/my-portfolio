@@ -1,9 +1,5 @@
 import React from 'react';
 
-const sent = () => {
-  return true;
-}
-
 export default function Contact() {
   return (
     <div>
