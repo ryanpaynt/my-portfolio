@@ -10,9 +10,7 @@ import team_page from '../../assets/img/team-gen.jpg'
 import fitness_page from '../../assets/img/fitness.jpg'
 
 
-class Portfolio extends Component {
-
-  render() {
+export default function Portfolio() {
     return (
       <div>
         <h1 className="title">My Work</h1>
@@ -84,7 +82,4 @@ class Portfolio extends Component {
         </div>
       </div>
     );
-  }
 }
-
-export default Portfolio;

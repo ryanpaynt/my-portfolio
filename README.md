@@ -1,11 +1,11 @@
 # Portfolio for My Profile
 
 ## Description
-### I needed to create a portfolio page due to the user story. As described in the story I need to create this page in order to be hireable and ready for the job indiustry. This page ahas my contact details, a paragraph about me, and my projects so far. This all comes with the links of my repo and website.
+This is my website. Follow these links and you will be able to see all of my works, experience, and even contact me!
 
 ## Screenshot
 
-<img src = './assets/portFolio.png'>
+<img src = './src/assets/img/portFolio.png'>
 
 
 [GitHub](https://github.com/ryanpaynt/my-portfolio)
