@@ -219,14 +219,14 @@ figcaption a{
   display: none;
 }
 
-.img{
+/* .img{
   opacity: 50%;
-}
+} */
 
 .img:hover figcaption{
   display: block;
 }
 
-.img:hover{
+/* .img:hover{
   opacity: 100%;
-}
+} */
