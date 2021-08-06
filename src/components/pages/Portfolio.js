@@ -10,7 +10,7 @@ import budget from '../../assets/imgs/budget-tracker.jpg';
 
 export default function Portfolio() {
   return (
-    <section className="section has-background-primary-dark" style={{}}>
+    <section className="section has-background-primary-dark">
       <div className="container" style={{ height: '100%' }}>
         <div class="tile is-ancestor top">
           <div class="tile is-parent test">
