@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre Baskerville">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+  <section class="section has-background-primary-dark">
+    <div class="container" style="height: 400px;">
+      <div class="container" style="padding-left: 5%; padding-top: 10%">
+        <h1 class='title is-1 line-1 anim-typewriter' style="color: white; font-family: 'Libre Baskerville';">
+          &lt;h1&gt;Welcome to
+          my Portfolio.&lt;/h1&gt;
+        </h1>
+        <button class="button is-success is-light" style="margin-left: 45%;">Proceed</button>
+      </div>
+      <img src="./old/assets/img/ProgrammingIllustration.png" alt="computer img" width="1000" style="margin-left: 7%;">
+    </div>
+  </section>
+</body>
+<script>
+  var submitButton = document.getElementById("submit_form");
+  var form = document.getElementById("email_form");
+  form.addEventListener("submit", function (e) {
+    setTimeout(function () {
+      submitButton.value = "Sending...";
+      submitButton.disabled = true;
+    }, 1);
+  });
+</script>
+<style>
+  /* Global */
+  html {
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+  .line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+
+  /* Animation */
+  .anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms steps(44) infinite normal;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 24em;
+    }
+  }
+
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+      border-right-color: transparent;
+    }
+  }
+</style>
+
+</html>

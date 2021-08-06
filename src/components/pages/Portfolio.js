@@ -1,85 +1,141 @@
-import React, { Component } from "react"
-import M from "materialize-css"
-import '../../assets/css/materialize.css'
-import '../../assets/css/materialize.min.css'
-import budget_page from '../../assets/img/budget.jpg'
-import note_page from '../../assets/img/note-taker.jpg'
-import ff_page from '../../assets/img/ff.jpg'
-import poke_page from '../../assets/img/PTB.jpg'
-import team_page from '../../assets/img/team-gen.jpg'
-import fitness_page from '../../assets/img/fitness.jpg'
-
+import React from "react";
+import '../../assets/css/portfolio.css';
+import team from '../../assets/imgs/team-gen.jpg';
+import poke from '../../assets/imgs/poketeam.jpg';
+import note from '../../assets/imgs/note-taker.jpg';
+import html from '../../assets/imgs/html-gen.jpg';
+import fitness from '../../assets/imgs/fitness-tracker.jpg';
+import ff from '../../assets/imgs/forum-friends.jpg';
+import budget from '../../assets/imgs/budget-tracker.jpg';
 
 export default function Portfolio() {
-    return (
-      <div>
-        <h1 className="title">My Work</h1>
-
-        <div className='row' id='images'>
-          <div className='col s12 m6 6 responsive-img img'>
-            <img src={budget_page}/>
-            <figcaption>
-            <p><u><b>Budget Tracker</b></u></p>
-              <br></br>
-              <a href='https://budget-tracker-1402.herokuapp.com/' target='blank'>Deployed Website</a>
-              <br></br>
-              <br></br>
-              <a href='https://github.com/ryanpaynt/budget-tracker' target='blank'>Git Repo</a>
-            </figcaption>
+  return (
+    <section className="section has-background-primary-dark" style={{}}>
+      <div className="container" style={{ height: '100%' }}>
+        <div class="tile is-ancestor top">
+          <div class="tile is-parent test">
+            <article class="tile is-child box" style={{ margin: '100px' }}>
+              <p class="title test-text">Resume Builder</p>
+              <div className='img-container'>
+                <img className='test-img' src={team} />
+                <a href='https://github.com/morrisbianco/resume-builder' target='_blank'>
+                  <div style={{ fontSize: '30px' }} className='deployed-git'><i className="fab fa-github"></i></div>
+                </a>
+                <a href='https://rapid-resume.herokuapp.com/' target='_blank'>
+                  <div style={{ fontSize: '30px' }} className='deployed-URL'><i className="fas fa-link"></i></div>
+                </a>
+              </div>
+            </article>
           </div>
-          <div className='col s12 m6 6 responsive-img img'>
-            <img src={note_page}/>
-            <figcaption>
-            <p><u><b>Notes App</b></u></p>
-              <br></br>
-              <a href='https://secure-citadel-65053.herokuapp.com/' target='blank'>Deployed Website</a>
-              <br></br>
-              <br></br>
-              <a href='https://github.com/ryanpaynt/note-taker' target='blank'>Git Repo</a>
-            </figcaption>
+          <div class="tile is-parent test">
+            <article class="tile is-child box">
+              <p class="title test-text">Note Taker</p>
+              <div className='img-container'>
+                <img className='test-img' src={note} />
+                <a href='https://github.com/ryanpaynt/note-taker' target='_blank'>
+                  <div style={{ fontSize: '30px' }} className='deployed-git'><i className="fab fa-github"></i></div>
+                </a>
+                <a href='https://secure-citadel-65053.herokuapp.com/' target='_blank'>
+                  <div style={{ fontSize: '30px' }} className='deployed-URL'><i className="fas fa-link"></i></div>
+                </a>
+              </div>
+            </article>
           </div>
-          <div className='col s12 m6 6 responsive-img img'>
-            <img src={poke_page}/>
-            <figcaption>
-            <p><u><b>PokeTeam App</b></u></p>
-              <br></br>
-              <a href='https://budget-tracker-1402.herokuapp.com/' target='blank'>Deployed Website</a>
-              <br></br>
-              <br></br>
-              <a href='https://github.com/huirayj/forum-friends/' target='blank'>Git Repo</a>
-            </figcaption>
+          <div class="tile is-parent test">
+            <article class="tile is-child box">
+              <p class="title test-text">Book Search</p>
+              <div className='img-container'>
+                <img className='test-img' src={html} />
+                <a href='https://github.com/ryanpaynt/book-search' target='_blank'>
+                  <div style={{ fontSize: '30px' }} className='deployed-git'><i className="fab fa-github"></i></div>
+                </a>
+                <a href='https://book-search-1402.herokuapp.com/' target='_blank'>
+                  <div style={{ fontSize: '30px' }} className='deployed-URL'><i className="fas fa-link"></i></div>
+                </a>
+              </div>
+            </article>
           </div>
-          <div className='col s12 m6 6 responsive-img img'>
-            <img src={ff_page}/>
-            <figcaption>
-            <p><u><b>Forum Friends</b></u></p>
-              <br></br>
-              <a href='https://forum-friends.herokuapp.com/' target='blank'>Deployed Website</a>
-              <br></br>
-              <br></br>
-              <a href='https://github.com/ryanpaynt/budget-tracker' target='blank'>Git Repo</a>
-            </figcaption>
-          </div>
-          <div className='col s12 m6 6 responsive-img img'>
-            <img src={team_page}/>
-            <figcaption>
-            <p><u><b>Team Tracker</b></u></p>
-              <br></br>
-              <a href='https://github.com/ryanpaynt/team-generator' target='blank'>Git Repo</a>
-            </figcaption>
-          </div>
-          <div className='col s12 m6 6 responsive-img img'>
-            <img src={fitness_page}/>
-            <figcaption>
-            <p><u><b>Fitness Tracker</b></u></p>
-              <br></br>
-              <a href='https://fitness-tracker-1402.herokuapp.com/' target='blank'>Deployed Website</a>
-              <br></br>
-              <br></br>
-              <a href='https://github.com/ryanpaynt/fitness-tracker' target='blank'>Git Repo</a>
-            </figcaption>
+          <div class="tile is-parent test">
+            <article class="tile is-child box">
+              <p class="title test-text">Fitness Tracker</p>
+              <div className='img-container'>
+                <img className='test-img' src={fitness} />
+                <a href='https://github.com/ryanpaynt/fitness-tracker' target='_blank'>
+                  <div style={{ fontSize: '30px' }} className='deployed-git'><i className="fab fa-github"></i></div>
+                </a>
+                <a href='https://fitness-tracker-1402.herokuapp.com/' target='_blank'>
+                  <div style={{ fontSize: '30px' }} className='deployed-URL'><i className="fas fa-link"></i></div>
+                </a>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-    );
+      <div class="tile is-ancestor move-tile">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent welcome">
+              <article class="tile is-child box">
+                <p class="title greeting">Welcome</p>
+                <div class="content">
+                  <p className='descr'>
+                    This is my profile page! Here you will find just a small portion of the work I have produced on my full stack journey.
+                    Each tile has two links to the repository and the deployed website! If there are any issues do not hesitate to use the contact page.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="tile is-8 is-vertical">
+              <div class="tile">
+                <div class="tile is-parent test">
+                  <article class="tile is-child box">
+                    <p class="title test-text">Forum Friends</p>
+                    <div className='img-container'>
+                      <img className='test-img' src={ff} />
+                      <a href='https://github.com/huirayj/forum-friends' target='_blank'>
+                        <div style={{ fontSize: '30px' }} className='deployed-git'><i className="fab fa-github"></i></div>
+                      </a>
+                      <a href='https://forum-friends.herokuapp.com/' target='_blank'>
+                        <div style={{ fontSize: '30px' }} className='deployed-URL'><i className="fas fa-link"></i></div>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent test">
+                  <article class="tile is-child box">
+                    <p class="title test-text">Budget Tracker</p>
+                    <div className='img-container'>
+                      <img className='test-img' src={budget} />
+                      <a href='https://github.com/ryanpaynt/budget-tracker' target='_blank'>
+                        <div style={{ fontSize: '30px' }} className='deployed-git'><i className="fab fa-github"></i></div>
+                      </a>
+                      <a href='https://budget-tracker-1402.herokuapp.com/' target='_blank'>
+                        <div style={{ fontSize: '30px' }} className='deployed-URL'><i className="fas fa-link"></i></div>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-12 is-vertical big-tile">
+            <div class="tile is-parent test">
+              <article class="tile is-child box">
+                <p class="title test-text">Poketeam</p>
+                <div className='img-container'>
+                  <img className='test-img' src={poke} />
+                  <a href='https://github.com/amgaudet/pokemon-team-builder' target='_blank'>
+                    <div style={{ fontSize: '30px' }} className='deployed-git'><i className="fab fa-github"></i></div>
+                  </a>
+                  <a href='https://amgaudet.github.io/pokemon-team-builder' target='_blank'>
+                    <div style={{ fontSize: '30px' }} className='deployed-URL'><i className="fas fa-link"></i></div>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
-import Footer from './pages/Footer';
+import About from './pages/About';
+import Contact from '../components/pages/Contact';
+import Portfolio from '../components/pages/Portfolio';
+import Resume from '../components/pages/Resume';
+// import Footer from '../../old/components/pages/Footer';
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
-  
+  const [currentPage, setCurrentPage] = useState('home');
+
   useEffect(() => {
     var hash = window.location.hash.substr(1);
     console.log(hash);
@@ -26,6 +27,9 @@ export default function PortfolioContainer() {
     if (currentPage === 'contact') {
       return <Contact />;
     }
+    if (currentPage === 'about') {
+      return <About />;
+    }
     return <Home />;
   };
 
@@ -36,7 +40,7 @@ export default function PortfolioContainer() {
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

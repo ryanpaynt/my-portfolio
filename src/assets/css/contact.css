@@ -1,0 +1,12 @@
+textarea{
+  width: 300;
+}
+
+.textarea{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.fields{
+  transform: translateY(-55px);
+}
