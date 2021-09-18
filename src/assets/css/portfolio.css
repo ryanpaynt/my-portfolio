@@ -4,7 +4,6 @@
 
 #card:hover img{
   transform: translateY(-20px);
-  opacity: 50%;
   transition-duration: 2s;
 }
 
