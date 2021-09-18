@@ -4,11 +4,12 @@
 
 #card:hover img{
   transform: translateY(-20px);
+  opacity: 50%;
   transition-duration: 2s;
 }
 
 .img-container i{
-  opacity: 0%;
+  opacity: 0;
   font-size: 30px;
   margin-bottom: 15px;
 }
@@ -27,5 +28,5 @@
 
 #card:hover i{
   transition-duration: 2s;
-  opacity: 100%;
+  opacity: 1;
 }
