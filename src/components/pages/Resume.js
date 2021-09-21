@@ -14,7 +14,7 @@ export default function Resume() {
           <div class="tile is-ancestor">
             <div class="tile is-parent">
               <article class="tile is-child box">
-                <p class="title">Back End</p>
+                <p class="title">Front End</p>
                 <p class="subtitle">With experience in...</p>
                 <div class="content">
                 </div>
@@ -38,7 +38,7 @@ export default function Resume() {
           <div class="tile is-ancestor">
             <div class="tile is-parent">
               <article class="tile is-child box">
-                <p class="title">Front End</p>
+                <p class="title">Back End</p>
                 <p class="subtitle">With experience in...</p>
                 <div class="content">
                 </div>
